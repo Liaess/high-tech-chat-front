@@ -1,3 +1,14 @@
+import Header from "components/header";
+import Navbar from "components/navbar";
+import ChatSelectors from "components/chatSelectors";
+// import Chat from "components/chat";
+
 export default function Home(): JSX.Element {
-  return <h1>Hello World</h1>;
+	return (
+    <div className="bg-slate-500 min-h-screen">
+      <Header/>
+      <Navbar/>
+      <ChatSelectors/>
+    </div>
+  )
 }
