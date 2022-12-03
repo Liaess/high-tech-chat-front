@@ -1,14 +1,17 @@
 import Header from "components/header";
 import Navbar from "components/navbar";
 import ChatSelectors from "components/chatSelectors";
-// import Chat from "components/chat";
+import Chat from "components/chat";
+import Users from "components/users";
 
 export default function Home(): JSX.Element {
 	return (
-    <div className="bg-slate-500 min-h-screen">
-      <Header/>
-      <Navbar/>
-      <ChatSelectors/>
-    </div>
-  )
+		<div className="min-h-screen pl-16 flex">
+			<Header />
+			<Navbar />
+			<ChatSelectors />
+			<Chat />
+			<Users />
+		</div>
+	);
 }

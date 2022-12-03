@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function Navbar(): JSX.Element {
 	return (
-		<div className="bg-app-borders w-20 min-h-screen flex flex-col items-center fixed left-0 top-0 z-10">
-      <h1 className="text-light-gray text-xs py-1"> Discord </h1>
+		<div className="bg-first-color-palette w-16 min-h-screen flex flex-col items-center fixed left-0 top-0 z-10">
+			<h1 className="text-light-gray text-xs py-1"> TechChat </h1>
 			<div className="border-b border-gray-500">
-				<div className="bg-user-color w-14 h-14 rounded-full flex justify-center my-3">
+				<div className="bg-user-color w-11 h-11 rounded-full flex justify-center mt-1 mb-3">
 					<Image
 						className="object-contain"
-						width={35}
-						height={35}
+						width={30}
+						height={30}
 						src="/assets/discord-logo.png"
 						alt="logo"
 					/>
