@@ -12,7 +12,16 @@ module.exports = {
         lg: '976px',
         xl: '1440px',
       },
+      colors: {
+        'first-color-palette': '#212529',
+        'second-color-palette': '#282b30',
+        'third-color-palette': '#36393e',
+        'fourth-color-palette': '#424549',
+        'light-gray': '#d3d3d3',
+        'user-color': '#7289da',
+      }
     },
   },
+  mode: 'jit',
   plugins: [],
 }
