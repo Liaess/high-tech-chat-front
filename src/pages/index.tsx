@@ -5,13 +5,13 @@ import Chat from "components/chat";
 import Users from "components/users";
 
 export default function Home(): JSX.Element {
-	return (
-		<div className="min-h-screen pl-16 flex">
-			<Header />
-			<Navbar />
-			<ChatSelectors />
-			<Chat />
-			<Users />
-		</div>
-	);
+  return (
+    <div className="min-h-screen pl-16 flex">
+      <Header />
+      <Navbar />
+      <ChatSelectors />
+      <Chat />
+      <Users />
+    </div>
+  );
 }
