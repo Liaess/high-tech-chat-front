@@ -1,0 +1,10 @@
+import { {{camelCase name}} } from ".";
+import { renderHook } from "@testing-library/react";
+
+describe("use{{camelCase name}}", () => {
+  it("should result be not null", () => {
+    const { result } = renderHook(() => {{camelCase name}}());
+
+    expect(result).not.toBeNull();
+  });
+});
