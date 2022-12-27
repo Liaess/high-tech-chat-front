@@ -2,7 +2,7 @@ import { ChatSelectors } from ".";
 import { render, screen } from "@testing-library/react";
 
 function renderTemplate() {
-  render(<ChatSelectors />);
+  return render(<ChatSelectors />);
 }
 
 describe("<ChatSelectors />", () => {

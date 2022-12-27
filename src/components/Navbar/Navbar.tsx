@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Navbar(): JSX.Element {
+export function Navbar(): JSX.Element {
   return (
     <div className="bg-first-color-palette w-16 min-h-screen flex flex-col items-center fixed left-0 top-0 z-10">
       <h1 className="text-light-gray text-xs py-1"> TechChat </h1>

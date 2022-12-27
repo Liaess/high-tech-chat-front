@@ -14,6 +14,7 @@ const customJestConfig = {
   setupFilesAfterEnv: ["<rootDir>/jest-setup.ts"],
   moduleDirectories: ["node_modules", "<rootDir>/"],
   testEnvironment: "jest-environment-jsdom",
+  moduleDirectories: ["node_modules", "src"],
   coverageThreshold: {
     global: {
       branches: 75,

@@ -1,16 +1,16 @@
-import { Chat } from ".";
+import { Users } from ".";
 import { render, screen } from "@testing-library/react";
 
 function renderTemplate() {
-  return render(<Chat />);
+  return render(<Users />);
 }
 
-describe("<Chat />", () => {
+describe("<Users />", () => {
   it("should render the component", () => {
     renderTemplate();
 
     const component = screen.getByRole("heading", {
-      name: /messages/i,
+      name: /USERS/i,
     });
 
     expect(component).toBeInTheDocument();

@@ -1,8 +1,8 @@
 import { ChatSelectors } from "@/components/ChatSelectors";
 import { Header } from "@/components/Header";
-import { Chat } from "components/Chat";
-import Navbar from "components/navbar";
-import Users from "components/users";
+import { Navbar } from "@/components/Navbar";
+import { Users } from "@/components/Users";
+import { Chat } from "@/components/Chat";
 
 export function Home(): JSX.Element {
   return (

@@ -1,1 +1,1 @@
-export { useIcons } from "./useIcons";
+export { useIcons, ErrorIcon, iconsList } from "./useIcons";

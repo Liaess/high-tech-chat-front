@@ -1,16 +1,16 @@
-import { Chat } from ".";
+import { Navbar } from ".";
 import { render, screen } from "@testing-library/react";
 
 function renderTemplate() {
-  return render(<Chat />);
+  return render(<Navbar />);
 }
 
-describe("<Chat />", () => {
+describe("<Navbar />", () => {
   it("should render the component", () => {
     renderTemplate();
 
     const component = screen.getByRole("heading", {
-      name: /messages/i,
+      name: /TechChat/i,
     });
 
     expect(component).toBeInTheDocument();

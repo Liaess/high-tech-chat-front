@@ -2,11 +2,15 @@ import { Header } from ".";
 import { render, screen } from "@testing-library/react";
 
 function renderTemplate() {
-  render(<Header />);
+  return render(<Header />);
 }
 
 describe("<Header />", () => {
-  it.todo("should render the component", () => {
+  it("should render the component", () => {
     renderTemplate();
+
+    const icons = screen.getAllByTestId("icon");
+
+    expect(icons.length).toBeGreaterThan(0);
   });
 });
