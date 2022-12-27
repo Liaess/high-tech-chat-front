@@ -1,6 +1,6 @@
 import TextareaAutosize from "react-autosize-textarea";
 
-export default function Chat(): JSX.Element {
+export function Chat(): JSX.Element {
   return (
     <div className="bg-third-color-palette w-[calc(100%-24rem)] pt-[3.75rem]">
       <div className="p-3">
