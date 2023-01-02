@@ -1,4 +1,4 @@
-import { useIcons } from "../../hooks/useIcons";
+import { useIcons } from "@/hooks/useIcons";
 
 export function Header(): JSX.Element {
   const Minus = () => useIcons("minus", "text-light-gray mx-1");

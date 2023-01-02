@@ -21,18 +21,19 @@ export const iconsList = [
   },
 ];
 
-export const ErrorIcon = (
-  <CiWarning className="text-light-gray mx-1" data-testid="icon" />
-);
+const ErrorIcon = {
+  name: "error",
+  icon: <CiWarning data-testid="icon" />,
+};
 
 export function useIcons(name: IconName, className?: string) {
-  const chosen = iconsList.find((icon) => icon.name === name);
+  let chosen = iconsList.find((icon) => icon.name === name);
 
   if (!chosen) {
-    return ErrorIcon;
+    chosen = ErrorIcon;
   }
 
   return cloneElement(chosen.icon, {
-    className: className,
+    className: className ? className : "text-light-gray mx-1",
   });
 }
