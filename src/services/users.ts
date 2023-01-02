@@ -1,4 +1,4 @@
-import api from "../libs/axios";
+import api from "../libs/Axios";
 
 export default class User {
   static signUp(fetchData: any) {

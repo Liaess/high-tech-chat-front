@@ -1,17 +1,13 @@
-import Header from "components/header";
-import Navbar from "components/navbar";
-import ChatSelectors from "components/chatSelectors";
-import Chat from "components/chat";
-import Users from "components/users";
+import { Home } from "@/templates/Home";
+import Head from "next/head";
 
-export default function Home(): JSX.Element {
+export default function Main(): JSX.Element {
   return (
-    <div className="min-h-screen pl-16 flex">
-      <Header />
-      <Navbar />
-      <ChatSelectors />
-      <Chat />
-      <Users />
+    <div>
+      <Head>
+        <title>High Tech Chat</title>
+      </Head>
+      <Home />
     </div>
   );
 }

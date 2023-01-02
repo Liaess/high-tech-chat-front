@@ -15,7 +15,7 @@
   "globals": {
     "JSX": true
   },
-  "plugins": ["react"],
+  "plugins": ["@typescript-eslint", "testing-library", "jest-dom", "prettier"],
   "rules": {
     "@next/next/no-img-element": "off",
     "no-unused-vars": [
