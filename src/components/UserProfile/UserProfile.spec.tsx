@@ -1,16 +1,16 @@
-import { Users } from ".";
+import { UserProfile } from ".";
 import { render, screen } from "@testing-library/react";
 
 function renderTemplate() {
-  return render(<Users />);
+  return render(<UserProfile />);
 }
 
-describe("<Users />", () => {
+describe("<UserProfile />", () => {
   it("should render the component", () => {
     renderTemplate();
 
     const component = screen.getByRole("heading", {
-      name: /USERS/i,
+      name: /UserProfile/i,
     });
 
     expect(component).toBeInTheDocument();
