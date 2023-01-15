@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/templates/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -19,6 +20,8 @@ module.exports = {
         "fourth-color-palette": "#424549",
         "light-gray": "#d3d3d3",
         "user-color": "#7289da",
+        "link-color":
+          "hsl(197, calc(var(--saturation-factor, 1) * 100%), 47.8%);",
       },
     },
   },

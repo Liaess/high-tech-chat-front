@@ -30,7 +30,6 @@
     "linebreak-style": 0,
     "quotes": ["error", "double"],
     "semi": ["error", "always"],
-    "space-before-function-paren": ["error", "never"],
     "space-before-blocks": ["error", "always"],
     "object-curly-spacing": ["error", "always"],
     "padded-blocks": ["error", "never"],
